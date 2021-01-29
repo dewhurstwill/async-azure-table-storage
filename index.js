@@ -153,7 +153,7 @@ function deleteEntity(tableSvc, tableName, task) {
 };
 
 // Deletes azure tables
-function deleteTable(tableSvc,tableName) {
+function deleteTable(tableSvc, tableName) {
     return new Promise((resolve, reject) => {
         tableSvc.deleteTable(tableName, (error, result, response) => {
             if(!error) {
