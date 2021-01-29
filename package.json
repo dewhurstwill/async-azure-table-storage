@@ -1,0 +1,15 @@
+{
+  "name": "async-azure-table-storage",
+  "version": "1.0.0",
+  "description": "An async wrapper for azure table storage",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dewhurstwill/async-azure-table-storage.git"
+  },
+  "author": "Will Dewhurst (dev@wdew.uk)",
+  "license": "MIT",
+  "dependencies": {
+    "azure-storage": "^2.10.3"
+  }
+}
