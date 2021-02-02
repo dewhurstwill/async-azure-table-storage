@@ -171,16 +171,16 @@ function deleteTable(tableSvc, tableName) {
 // Clean entities returned from queryEntities
 // Removes .metadata and _
 function cleanEntities(entities) {
-	return entities.map(row => {
-		let cleanRow = {};
-		const keyArray = Object.keys(row);
-		keyArray.forEach(key => {
-			if (!(key.startsWith("."))) {
-				cleanRow[`${key}`] = row[key]["_"];
-			}
-		})
-		return(cleanRow);
-	});
+    return entities.map(row => {
+      let cleanRow = {};
+      const keyArray = Object.keys(row);
+      keyArray.forEach(key => {
+        if (!(key.startsWith("."))) {
+          cleanRow[`${key}`] = row[key]["_"];
+        }
+      });
+      return(cleanRow);
+    });
 };
 
 // Exports
