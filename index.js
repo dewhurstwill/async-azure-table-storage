@@ -184,13 +184,16 @@ function cleanEntities(entities) {
 };
 
 // Exports
-exports.createTable = createTable;
-exports.insertEntity = insertEntity;
-exports.replaceEntity = replaceEntity;
-exports.retrieveEntity = retrieveEntity;
-exports.queryEntities = queryEntities;
-exports.deleteEntity = deleteEntity;
-exports.deleteTable = deleteTable;
-exports.cleanEntities = cleanEntities;
-exports.insertOrMergeEntity = insertOrMergeEntity;
-exports.insertOrReplaceEntity = insertOrReplaceEntity;
+module.exports = {
+  createTable,
+  createTable,
+  replaceEntity,
+  mergeEntity,
+  retrieveEntity,
+  queryEntities,
+  deleteEntity,
+  deleteTable,
+  cleanEntities,
+  insertOrMergeEntity,
+  insertOrReplaceEntity
+};
