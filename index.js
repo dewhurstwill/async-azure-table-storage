@@ -3,7 +3,7 @@ function createTable(tableSvc, tableName) {
     return new Promise((resolve, reject) => {
         tableSvc.createTableIfNotExists(tableName, (error, result, response) => {
             if (!error) {
-                resolve();
+		resolve(result);
             } else {
                 reject(error);
             }
