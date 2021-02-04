@@ -23,6 +23,7 @@ npm install async-azure-table-storage
 |-|-|-|
 | createTable | `const { createTable } = require('async-azure-table-storage');` | tableSvc, tableName |
 | insertEntity | `const { insertEntity } = require('async-azure-table-storage');` | tableSvc, tableName, task |
+| mergeEntity | `const { mergeEntity } = require('async-azure-table-storage');` | tableSvc, tableName, task |
 | replaceEntity | `const { replaceEntity } = require('async-azure-table-storage');` | tableSvc, tableName, task |
 | insertOrMergeEntity | `const { insertOrMergeEntity } = require('async-azure-table-storage');` | tableSvc, tableName, task |
 | insertOrReplaceEntity | `const { insertOrReplaceEntity } = require('async-azure-table-storage');` | tableSvc, tableName, task |
