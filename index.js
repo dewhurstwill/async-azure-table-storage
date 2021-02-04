@@ -186,6 +186,7 @@ function cleanEntities(entities) {
 // Exports
 module.exports = {
   createTable,
+  insertEntity,
   replaceEntity,
   mergeEntity,
   retrieveEntity,
