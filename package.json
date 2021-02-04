@@ -1,6 +1,6 @@
 {
   "name": "async-azure-table-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An async wrapper for azure table storage",
   "main": "index.js",
   "repository": {
