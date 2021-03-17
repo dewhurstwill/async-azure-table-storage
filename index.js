@@ -28,7 +28,7 @@ function insertEntity(tableSvc, tableName, task){
 };
 
 // Replace an entity
-function replaceEntity(tableSvc,tableName, updatedTask) {
+function replaceEntity(tableSvc, tableName, updatedTask) {
     return new Promise((resolve, reject) => {
         tableSvc.replaceEntity(tableName, updatedTask, (error, result, response) => {
             if(!error){
@@ -44,7 +44,7 @@ function replaceEntity(tableSvc,tableName, updatedTask) {
 };
 
 // Merge an entity
-function mergeEntity(tableSvc,tableName, updatedTask) {
+function mergeEntity(tableSvc, tableName, updatedTask) {
     return new Promise((resolve, reject) => {
         tableSvc.mergeEntity(tableName, updatedTask, (error, result, response) => {
             if(!error){
@@ -60,7 +60,7 @@ function mergeEntity(tableSvc,tableName, updatedTask) {
 };
 
 // Insert or replace an entity
-function insertOrReplaceEntity(tableSvc,tableName, updatedTask) {
+function insertOrReplaceEntity(tableSvc, tableName, updatedTask) {
     return new Promise((resolve, reject) => {
         tableSvc.insertOrReplaceEntity(tableName, updatedTask, (error, result, response) => {
             if(!error){
@@ -76,7 +76,7 @@ function insertOrReplaceEntity(tableSvc,tableName, updatedTask) {
 };
 
 // Insert or merge an entity
-function insertOrMergeEntity(tableSvc,tableName, updatedTask) {
+function insertOrMergeEntity(tableSvc, tableName, updatedTask) {
     return new Promise((resolve, reject) => {
         tableSvc.insertOrMergeEntity(tableName, updatedTask, (error, result, response) => {
             if(!error){
@@ -108,7 +108,7 @@ function retrieveEntity(tableSvc, tableName, partitionKey, rowKey) {
 };
 
 // Helper for query entities, to support large requests which have a continuation token
-function queryEntitiesSegmented (tableSvc, tableName, tableQuery, continuationToken) {
+function queryEntitiesSegmented(tableSvc, tableName, tableQuery, continuationToken) {
     return new Promise((resolve, reject) => {
         tableSvc.queryEntities(tableName, tableQuery, continuationToken, (error, results) => {
             if (!error) {
@@ -121,7 +121,7 @@ function queryEntitiesSegmented (tableSvc, tableName, tableQuery, continuationTo
 };
 
 // Queries all entities based on table query input
-function queryEntities (tableSvc, tableName, tableQuery) {
+function queryEntities(tableSvc, tableName, tableQuery) {
     return new Promise(async (resolve, reject) => {
         let continuationToken = null;
         let allQueryRecords = [];
