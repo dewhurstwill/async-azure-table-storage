@@ -32,3 +32,9 @@ npm install async-azure-table-storage
 | deleteEntity | `const { deleteEntity } = require('async-azure-table-storage');` | tableSvc, tableName, task |
 | deleteTable | `const { deleteTable } = require('async-azure-table-storage');` | tableSvc, tableName |
 | cleanEntities | `const { cleanEntities } = require('async-azure-table-storage');` | entities |
+
+## Supporting
+
+Please consider supporting my project, the more caffine I have, the quicker I can type.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/willdewhurst)
